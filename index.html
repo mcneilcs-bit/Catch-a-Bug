@@ -11,6 +11,8 @@
     <div class="screen">
       <h1>Catch The Insect</h1>
       <button class="btn" id="start-btn">Play Game</button>
+      <audio id="bg-audio" loop>
+        <source src="gamesong/adveture.mp3" type="audio/mpeg" />
     </div>
 
     <div class="screen">
@@ -53,6 +55,12 @@
     </div>
 
     <div class="screen game-container" id="game-container">
+
+      <div id="game-over-screen" class="game-over-screen hidden">
+        <h1>Game Over!</h1>
+        <h3 id="final-score-text" class="final-score-text"></h3>
+        <button id="restart-btn" class="btn">Restart Game</button>
+      </div>
       <h3 id="time" class="time">Time: 00:00</h3>
       <h3 id="score" class="score">Score: 0</h3>
       <h5 id="message" class="message">
